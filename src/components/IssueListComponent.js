@@ -17,7 +17,7 @@ class IssueListComponent extends React.Component {
 				title: issue.title,
 				content: issue.body,
 				state: issue.state,
-				assignee: issue.assignee.login,
+				assignee: issue.assignee && issue.assignee.login,
 				created_at: issue.created_at,
 			}
 		});

@@ -48,7 +48,7 @@ class SideBarComponent extends React.Component {
 					<span>Password :</span>
 				</div>
 				<div className={sideBarClasses('row')}>
-					<input type="text" value={ password } onChange={ this.handleChange.bind(this, 'password') } />
+					<input type="password" value={ password } onChange={ this.handleChange.bind(this, 'password') } />
 				</div>
 				<div className={sideBarClasses('row')}>
 					<span>Repostiry URI ( username/repo-name ) :</span>

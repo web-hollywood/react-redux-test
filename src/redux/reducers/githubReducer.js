@@ -30,6 +30,7 @@ export default function(state = initialState, { type, payload }) {
     case LOAD_GITHUB_ISSUES_FAILED:
       return {
         ...state,
+        issues: [],
         isLoading: false
       }
     default:
